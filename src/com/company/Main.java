@@ -18,6 +18,12 @@ public class Main {
             finalPrice = (amount * price) + (amount * price * 0.0685);
         } else if (stateCode.equalsIgnoreCase("NV")) {
             finalPrice = (amount * price) + (amount * price * 0.08);
+        } else if (stateCode.equalsIgnoreCase("TX")) {
+            finalPrice = (amount * price) + (amount * price * 0.0625);
+        } else if (stateCode.equalsIgnoreCase("AL")) {
+            finalPrice = (amount * price) + (amount * price * 0.04);
+        } else if (stateCode.equalsIgnoreCase("CA")) {
+            finalPrice = (amount * price) + (amount * price * 0.0825);
         }
 
         System.out.println(finalPrice);
